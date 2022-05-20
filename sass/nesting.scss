@@ -1,0 +1,157 @@
+$PrimaryBG : salmon;
+$HoverBG : purple;
+$PrimaryFont : 3em;
+$SecFont : 1.2em;
+
+
+.container {
+    background-color: $PrimaryBG;
+
+    h1 {
+        font-size: $PrimaryFont;
+    }
+
+    p {
+        font-size: $SecFont;
+    }
+
+    .main,
+    footer {
+        &:hover {
+            background-color: $HoverBG;
+        }
+    }
+}
+
+// .main,
+// footer {
+//     .container & {
+//         background-color: $PrimaryBG;
+//     }
+
+//     h1 {
+//         font-size: $PrimaryFont;
+//     }
+
+//     p {
+//         font-size: $SecFont;
+//     }
+
+//     &:hover {
+//         background-color: $HoverBG;
+//     }
+// }
+
+.main {
+
+    & &-heading,
+    & &-paragraph {
+        letter-spacing: 1px;
+        color: #fff;
+    }
+}
+
+.footer {
+
+    #{&}-heading,
+    #{&}-paragraph {
+        text-transform: capitalize;
+    }
+}
+
+
+// .main {
+//     background-color: $PrimaryBG;
+//     padding: 10px;
+
+//     .main-heading {
+//         font-size: 2em;
+//     }
+
+//     .main-paragraph {
+//         color: #fff;
+//         font-size: 1.2em;
+//         letter-spacing: 1px;
+//     }
+// }
+
+// footer {
+//     margin-top: 20px;
+//     background-color: $SecBG;
+//     padding: 10px;
+
+//     .footer-heading {
+//         font-size: 1.8em;
+//     }
+
+//     .footer-paragraph {
+//         font-size: 1.2em;
+//         color: red;
+//     }
+// }
+
+// .main,
+// footer {
+
+//     h1,
+//     p {
+//         font-size: 2em;
+//     }
+// }
+
+// &
+// Parent Selector
+
+// .main,
+// footer {
+//     .container & {
+//         background-color: $PrimaryBG;
+//     }
+
+//     &:hover {
+//         background-color: $HoverBG;
+//         color: #fff;
+//     }
+// }
+
+// .main {
+//     & &-heading {
+//         font-size: 3em;
+//     }
+
+//     & &-paragraph {
+//         font-size: 1.2em;
+//     }
+// }
+
+// .footer {
+//     & &-heading {
+//         font-size: 3em;
+//     }
+
+//     & &-paragraph {
+//         font-size: 1.2em;
+//     }
+// }
+
+// Interpolasi
+
+// .main {
+//     #{&}-heading {
+//         font-size: 3em;
+//     }
+
+//     #{&}-paragraph {
+//         font-size: 1.2em;
+//     }
+// }
+
+// .footer {
+//     #{&}-heading {
+//         font-size: 3em;
+//     }
+
+//     #{&}-paragraph {
+//         font-size: 1.2em;
+//     }
+// }

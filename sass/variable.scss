@@ -1,0 +1,47 @@
+// //CSS Variables
+
+// :root {
+//     --text-color: salmon;
+//     --primary-bg: lightblue;
+// }
+
+// body {
+//     background-color: var(--primary-bg);
+// }
+
+// h1 {
+//     color: var(--text-color);
+// }
+
+// Sass Variables
+
+// $textColor : #fff;
+// $Primary-bg : red; // tetap beda walau ditulis dengan nama sama, karena beda scope variable
+
+// body {
+//     $Primary-bg: lightblue; // scope variable lokal, jika ingin jadi global tambahkan ! global
+//     background-color: $Primary_bg; // karakter - / _ dianggap sama
+// }
+
+// h1 {
+//     color: $Primary-bg;
+// }
+
+
+// MAP SASS
+
+// $alertDanger : red;
+// $alertSuccess : green;
+// $alertOrange : orange;
+
+$alert : ('danger' : red,
+    'success' : green,
+    'warning' : orange);
+
+body {
+    background-color: map-get($alert, 'danger');
+}
+
+h1 {
+    color: map-get($alert, 'warning');
+}
