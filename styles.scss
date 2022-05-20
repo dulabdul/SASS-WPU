@@ -1,0 +1,14 @@
+$myBG : violet;
+$myFontSize : 3em;
+
+header {
+    background-color: $myBG;
+
+    h1 {
+        font-size: $myFontSize;
+    }
+
+    p {
+        color: #fff;
+    }
+}
