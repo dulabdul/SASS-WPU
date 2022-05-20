@@ -1,0 +1,28 @@
+.container {
+  background-color: salmon;
+}
+
+.container h1 {
+  font-size: 3em;
+}
+
+.container p {
+  font-size: 1.2em;
+}
+
+.container .main:hover,
+.container footer:hover {
+  background-color: purple;
+}
+
+.main .main-heading,
+.main .main-paragraph {
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer .footer-heading,
+.footer .footer-paragraph {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=nesting.css.map */
