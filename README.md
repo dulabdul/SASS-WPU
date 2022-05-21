@@ -23,3 +23,11 @@
 
 ## Modules
     Membuat code sass kita modular/mudah untuk dikelola.
+
+## Flow Control
+    Mengatut Alur kendali dari Sass
+    
+* @if, @else, @else if
+* @for
+* @while
+* @each 
