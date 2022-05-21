@@ -18,3 +18,8 @@
 ## Nesting
     Membuat hirarki visual yang jelas untuk selector CSS
 
+## Mixin
+    Kumpulan style yang dapat kita gunakan berulang-ulang
+
+## Modules
+    Membuat code sass kita modular/mudah untuk dikelola
