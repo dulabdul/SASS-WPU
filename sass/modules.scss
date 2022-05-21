@@ -1,0 +1,14 @@
+// PAKAI @IMPORT
+
+// @import 'modules/modules';
+// @import 'modules/header';
+// @import 'modules/container';
+// @import 'modules/footer';
+
+// @import 'modules/modules', 'modules/header', 'modules/container', 'modules/footer';
+
+// PAKAI USE
+
+@use 'modules/header';
+@use 'modules/container';
+@use 'modules/footer';
