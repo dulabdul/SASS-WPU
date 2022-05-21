@@ -1,0 +1,16 @@
+@use 'modules'as m;
+
+.container {
+    @include m.flex-box(row-reverse, space-evenly);
+    width: 600px;
+    height: 400px;
+    background-color: #ddd;
+
+    .box {
+        width: 60px;
+        height: 60px;
+        background-color: lightblue;
+        line-height: 60px;
+        text-align: center;
+    }
+}

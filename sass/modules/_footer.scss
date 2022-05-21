@@ -1,0 +1,15 @@
+@use 'modules'as m;
+
+.footer ul {
+    @include m.inline-list();
+
+    li {
+        background-color: blue;
+        padding: 10px;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
