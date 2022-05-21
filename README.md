@@ -16,10 +16,10 @@
 * **Styled Components / CSS in JS**
 
 ## Nesting
-    Membuat hirarki visual yang jelas untuk selector CSS
+    Membuat hirarki visual yang jelas untuk selector CSS.
 
 ## Mixin
-    Kumpulan style yang dapat kita gunakan berulang-ulang
+    Kumpulan style yang dapat kita gunakan berulang-ulang.
 
 ## Modules
-    Membuat code sass kita modular/mudah untuk dikelola
+    Membuat code sass kita modular/mudah untuk dikelola.
