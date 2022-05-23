@@ -31,3 +31,27 @@
 * @for
 * @while
 * @each 
+
+## Buit-in Function/Modules
+    Fungsi-fungsi bawaan SASS
+
+### Built-in Modules
+* **Color**
+* **List**
+* **Map**
+* **Math**
+* **Meta**
+* **Selector**
+* **String**
+
+### Color
+* Adjust
+* Complement
+* Darken
+* Lighten
+* Saturate
+* Desaturate
+* Grayscale
+* Mix
+* Fade-in
+* Fade-out
