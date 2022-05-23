@@ -1,0 +1,125 @@
+@use 'modules/font';
+@use 'modules/variable'as v;
+@use 'modules/mixin'as m;
+
+
+// Style
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+
+
+    @media screen and(min-width : 576px) {
+        &::before {
+            content: '';
+            background-image: url(/Latihan_sass/img/bg.png);
+            background-repeat: no-repeat;
+            background-size: 60vmax;
+            background-position: top right;
+            opacity: 0.9;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    @media screen and(max-width : 576px) {
+        background-color: v.$tersieColor;
+    }
+}
+
+.custom-nav {
+
+    .navbar-brand {
+        img {
+            width: 27px;
+            height: 27px;
+        }
+
+        span {
+            color: v.$primaryColor;
+            font-weight: 400;
+            margin-left: 0.4rem;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-left: 2em;
+
+            a {
+                color: v.$primaryColor;
+                font-weight: 500;
+                text-transform: uppercase;
+                transition: 0.3s color ease;
+
+                &:hover {
+                    color: darken(v.$primaryColor, 40%);
+                }
+            }
+
+            .button-sign-up {
+                @include m.button();
+            }
+        }
+    }
+
+    @media screen and(max-width: 992px) {
+        margin-top: -1em;
+    }
+}
+
+.heading_header {
+    margin-top: 18em;
+
+    h2 {
+        color: v.$primaryColor;
+        font-weight: 700;
+        font-size: 4em;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 3em;
+        color: v.$secColor;
+    }
+
+    p {
+        color: v.$textColor;
+        font-size: 1.1em;
+    }
+
+    a {
+        margin-top: 2em;
+        @include m.button();
+        border: 0;
+
+        &:hover {
+            color: v.$primaryColor;
+            background-color: transparent;
+            border: 1px solid v.$primaryColor;
+
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        margin-top: 0.8em;
+
+        h2 {
+            font-size: 3em;
+        }
+
+        h3 {
+            font-size: 2.5em;
+        }
+
+        a {
+            margin-bottom: 3em;
+        }
+    }
+}

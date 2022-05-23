@@ -1,0 +1,11 @@
+// Mixin
+@use 'variable'as v;
+
+@mixin button {
+    display: inline-block;
+    background-color: v.$primaryColor;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+}
